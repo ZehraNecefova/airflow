@@ -27,6 +27,7 @@ x-airflow-common:
     - /root/airflow_3.0.1/dags:/opt/airflow/dags
     - /root/airflow_3.0.1/logs:/opt/airflow/logs
     - /root/airflow_3.0.1/config:/opt/airflow/config
+    - /root/airflow_3.0.1/data:/opt/airflow/data
   depends_on:
     &airflow-common-depends-on
     postgres:
